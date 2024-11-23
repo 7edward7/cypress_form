@@ -16,14 +16,14 @@ describe('Test form submissions with different goals', () => {
       cy.get('#__next > div.survey___bccbe8e57fe8804b082c.survey > div.surveyInner.wysiwyg.surveyInner___ef119f124e1b0afe4f51.surveyInnerWithFooter___a410f93ddcd31a19c4cf > div.content.content___dc5e560ce80ecb1e7d40 > div > div.questions___cad41689373d16c7f214 > div.question.question_107.question_type_1.question___df23e051d300eb092d0d > div.content___fde8e27345b6df2af011.start___bb6477f99c8e6d530160 > div')
         .find('input')
         .type('Эдуард');
-        // Почта
+       // Почта
       cy.get('#__next > div.survey___bccbe8e57fe8804b082c.survey > div.surveyInner.wysiwyg.surveyInner___ef119f124e1b0afe4f51.surveyInnerWithFooter___a410f93ddcd31a19c4cf > div.content.content___dc5e560ce80ecb1e7d40 > div > div.questions___cad41689373d16c7f214 > div.question.question_108.question_type_1.question___df23e051d300eb092d0d > div.content___fde8e27345b6df2af011.start___bb6477f99c8e6d530160 > div > div')
         .find('input')
         .type('eduard.eduard@mail.ru');
-        // Телефон
+      // Телефон
       cy.get('#__next > div.survey___bccbe8e57fe8804b082c.survey > div.surveyInner.wysiwyg.surveyInner___ef119f124e1b0afe4f51.surveyInnerWithFooter___a410f93ddcd31a19c4cf > div.content.content___dc5e560ce80ecb1e7d40 > div > div.questions___cad41689373d16c7f214 > div.question.question_109.question_type_1.question___df23e051d300eb092d0d > div.content___fde8e27345b6df2af011.start___bb6477f99c8e6d530160 > div > div')
         .type('+7 311 22 44 99');
-        // Цель обращения
+      // Цель обращения
       cy.get('#downshift-0-toggle-button').click();
       // Выбор пункта из меню
       cy.wait(1000);
